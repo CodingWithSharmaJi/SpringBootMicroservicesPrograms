@@ -1,0 +1,5 @@
+package in.ashokittech.service;
+
+public class TicketService {
+
+}

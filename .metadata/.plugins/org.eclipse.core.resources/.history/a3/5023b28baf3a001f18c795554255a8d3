@@ -1,0 +1,5 @@
+package in.ashokittech.dao;
+
+public interface UserRepository {
+
+}

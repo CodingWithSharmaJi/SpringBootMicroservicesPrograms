@@ -1,0 +1,33 @@
+spring.application.name=TrainTicket
+spring.datasource.driver-class-name=oracle.jdbc.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521/orcl
+spring.datasource.username=scott
+spring.datasource.password=tiger
+server.port=9191
+
+#spring.jpa.hibernate.ddl-auto=update
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Oracle10gDialect
+#logging.level.org.springframework=DEBUG
+spring.jpa.hibernate.ddl-auto=none
+springdoc.api-docs.path=/api-docs
+springdoc.swagger-ui.path=/swagger-ui.html
+
+
+# Enable debug logging for the root level
+logging.level.root=DEBUG
+
+# Enable debug logging for Spring framework
+logging.level.org.springframework=DEBUG
+
+# Enable debug logging for your application packages
+logging.level.in.ashokittech=DEBUG
+
+# Enable debug logging for web requests (if needed)
+logging.level.org.springframework.web=DEBUG
+
+# Enable debug logging for Hibernate (if you use it)
+logging.level.org.hibernate=DEBUG
+
+
+

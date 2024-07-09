@@ -1,0 +1,31 @@
+package in.ashokittech;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokittech.dao.Passenger;
+import in.ashokittech.dao.UserRepository;
+
+@SpringBootApplication
+public class TrainTicketApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(TrainTicketApplication.class, args);
+		UserRepository userrepo=context.getBean(UserRepository.class);
+		Passenger entity=new Passenger();
+		entity.setName("Vaibhav");
+		entity.setEmail("VS14190@GMAIL.COM");
+		entity.setPhnNo(9413330971L);
+		entity.setTo("Jaipur");
+		entity.setFrom("Gandhinagar");
+		entity.setJdate("07July2024");
+		entity.setTrainnum("PJ1152");
+		
+		userrepo.save(entity);
+		System.out.println("Record Inserted Succesfully");
+	}
+
+}
+
+

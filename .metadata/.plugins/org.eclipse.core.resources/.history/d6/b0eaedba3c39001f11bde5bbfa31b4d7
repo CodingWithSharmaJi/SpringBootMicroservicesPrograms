@@ -1,0 +1,5 @@
+package com.brillio.binding;
+
+public class Ticket {
+
+}

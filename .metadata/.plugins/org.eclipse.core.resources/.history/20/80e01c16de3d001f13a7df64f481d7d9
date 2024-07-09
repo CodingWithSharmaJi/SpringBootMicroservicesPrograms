@@ -1,0 +1,5 @@
+package in.ashokittech.config;
+
+public class SwaggerConfig {
+
+}

@@ -1,0 +1,21 @@
+package in.ashokittech.dao;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+
+@Entity
+public class Passenger {
+	
+	private String name;
+	private String email;
+	private Long phnNo;
+	
+	@Column(name="from_s")
+	private String from;
+	@Column(name="to_s")
+	private String to;
+	private String jdate;
+	private String trainnum;
+	
+
+}

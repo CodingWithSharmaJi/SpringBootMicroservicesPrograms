@@ -1,0 +1,21 @@
+package in.ashokittech;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokittech.dao.Passenger;
+import in.ashokittech.dao.UserRepository;
+
+@SpringBootApplication
+public class TrainTicketApplication {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(TrainTicketApplication.class, args);
+		UserRepository userrepo=context.getBean(UserRepository.class);
+		Passenger entity=new Passenger();
+	}
+
+}
+
+

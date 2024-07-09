@@ -1,0 +1,45 @@
+package com.brillio.binding;
+
+@XmlRootElement
+public class Ticket {
+
+	Integer id;
+	String status;
+	String from;
+	String to;
+	Double price;
+	@Override
+	public String toString() {
+		return "Ticket [id=" + id + ", status=" + status + ", from=" + from + ", to=" + to + ", price=" + price + "]";
+	}
+	public Integer getId() {
+		return id;
+	}
+	public void setId(Integer id) {
+		this.id = id;
+	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getFrom() {
+		return from;
+	}
+	public void setFrom(String from) {
+		this.from = from;
+	}
+	public String getTo() {
+		return to;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public Double getPrice() {
+		return price;
+	}
+	public void setPrice(Double price) {
+		this.price = price;
+	}
+}

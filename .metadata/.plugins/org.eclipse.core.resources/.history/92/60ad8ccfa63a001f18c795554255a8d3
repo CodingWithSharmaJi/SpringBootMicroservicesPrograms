@@ -1,0 +1,25 @@
+package in.ashokittech.customerRest;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokittech.customer.Customer;
+
+@RestController
+public class CustomerRestController {
+	
+	@PostMapping(value="/customer",
+			consumes = {"application/xml","application/json"}
+	)
+	public ResponseEntity<Customer> addCustomerDetails(@RequestBody Customer customer){
+		Customer msg=null;
+		System.out.println(customer);
+		return new ResponseEntity<Customer>(msg,HttpStatus.ACCEPTED);
+
+		
+	}
+
+}

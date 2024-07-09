@@ -1,0 +1,13 @@
+package in.ashokittech.bind;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
+public class Book {
+	public int bookid;
+	public String bookname;
+	public double price;
+	
+
+}

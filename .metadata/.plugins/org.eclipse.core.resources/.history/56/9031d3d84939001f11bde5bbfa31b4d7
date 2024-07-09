@@ -1,0 +1,5 @@
+package com.brillio.invoice;
+
+public class Invoice {
+
+}

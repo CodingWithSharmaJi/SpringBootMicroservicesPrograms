@@ -1,0 +1,23 @@
+package in.ashokittech.bind;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
+@Entity
+public class Book {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ticket_seq")
+    @SequenceGenerator(name = "ticket_seq", sequenceName = "TICKET_SEQ", allocationSize = 1)
+	public Integer bookid;
+	public String bookname;
+	public Double price;
+	
+	
+
+}

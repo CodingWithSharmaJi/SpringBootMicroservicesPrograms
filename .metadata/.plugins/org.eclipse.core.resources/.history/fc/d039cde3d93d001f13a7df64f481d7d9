@@ -1,0 +1,9 @@
+package in.ashokittech.bind;
+
+import java.util.List;
+
+public class Books {
+	
+	private List<Book> booksList;
+
+}

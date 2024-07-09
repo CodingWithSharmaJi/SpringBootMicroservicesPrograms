@@ -1,0 +1,23 @@
+package in.ashokittech.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokittech.dao.Passenger;
+import in.ashokittech.dao.UserRepository;
+import in.ashokittech.request.PassengerRequest;
+
+@Service
+public class PassengerService {
+	
+	@Autowired
+	private UserRepository userDao;
+	
+	public void bookTicket(UserRepository userDao) {
+		
+		this.userDao=userDao;
+		
+		
+	}
+
+}

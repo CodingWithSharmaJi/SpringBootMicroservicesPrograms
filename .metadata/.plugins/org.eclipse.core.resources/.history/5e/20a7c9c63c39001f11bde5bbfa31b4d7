@@ -1,0 +1,16 @@
+package com.brillio.binding;
+
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Ticket {
+	
+	private Integer Id;
+	private String status;
+	private String from;
+	private String to;
+	private Double price;
+	
+	
+
+}

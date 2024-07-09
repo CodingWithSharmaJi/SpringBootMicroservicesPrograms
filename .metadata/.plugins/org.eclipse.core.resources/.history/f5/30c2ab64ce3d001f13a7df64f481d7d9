@@ -1,0 +1,29 @@
+package in.ashokittech.rest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.ashokittech.bind.Book;
+import in.ashokittech.dao.BookDao;
+import in.ashokittech.service.BookService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
+@RestController
+public class BookRestController {
+
+	@Autowired
+	private BookService bookservice;
+	
+	@PostMapping(value="/bookdetail",
+	produces= {
+			MediaType.APPLICATION_XML_VALUE,
+			MediaType.APPLICATION_JSON_VALUE
+	})
+	public Book bookDetail(@RequestBody Book book) {
+		Book bookdetail=(Book) bookservice.bookDetail(book);
+		return bookdetail;
+	}
+}

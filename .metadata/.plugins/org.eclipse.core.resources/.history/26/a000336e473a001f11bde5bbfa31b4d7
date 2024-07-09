@@ -1,0 +1,5 @@
+package in.ashokittech.course;
+
+public class CourseRestController {
+
+}

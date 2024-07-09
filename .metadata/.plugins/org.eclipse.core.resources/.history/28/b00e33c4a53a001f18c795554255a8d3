@@ -1,0 +1,11 @@
+package in.ashokittech.customer;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Customer {
+	private Integer id;
+	private String email;
+	private String name;
+
+}

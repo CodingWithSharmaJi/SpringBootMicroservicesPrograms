@@ -1,0 +1,55 @@
+package in.ashokittech.bookTicket;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlElement;
+
+@XmlRootElement
+public class BookTicket {
+    
+    private Integer bookId;
+    private String bookname;
+    private Double bookprice;
+
+    // No-arg constructor
+    public BookTicket() {
+    }
+
+    // Parameterized constructor
+    public BookTicket(Integer bookId, String bookname, Double bookprice) {
+        this.bookId = bookId;
+        this.bookname = bookname;
+        this.bookprice = bookprice;
+    }
+
+    @XmlElement
+    public Integer getBookId() {
+        return bookId;
+    }
+
+    public void setBookId(Integer bookId) {
+        this.bookId = bookId;
+    }
+
+    @XmlElement
+    public String getBookname() {
+        return bookname;
+    }
+
+    public void setBookname(String bookname) {
+        this.bookname = bookname;
+    }
+
+    @XmlElement
+    public Double getBookprice() {
+        return bookprice;
+    }
+
+    public void setBookprice(Double bookprice) {
+        this.bookprice = bookprice;
+    }
+
+    @Override
+    public String toString() {
+        return "BookTicket [bookId=" + bookId + ", bookname=" + bookname + ", bookprice=" + bookprice + "]";
+    }
+}

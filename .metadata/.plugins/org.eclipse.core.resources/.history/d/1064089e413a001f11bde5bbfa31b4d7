@@ -1,0 +1,10 @@
+package in.ashokittech.rest;
+
+public class WelcomeRestController {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

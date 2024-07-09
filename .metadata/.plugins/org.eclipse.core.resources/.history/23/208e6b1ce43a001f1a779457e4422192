@@ -1,0 +1,23 @@
+package in.ashokittech.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokittech.dao.TicketRepository;
+import in.ashokittech.request.Ticket;
+
+@Service
+public class TicketService {
+	
+	@Autowired
+	private TicketRepository ticketRepository;
+	
+	public Ticket bookTicket(Ticket ticket) {
+		return ticketRepository.save(ticket);
+	}
+	
+	public Ticket fetchTicket(Long fetch) {
+		ticketRepository.findById(fetch);
+	}
+
+}

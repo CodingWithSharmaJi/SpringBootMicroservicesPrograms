@@ -1,0 +1,9 @@
+package in.ashokittech.dao;
+
+import jakarta.persistence.Entity;
+
+@Entity
+
+public class IrctcDao {
+
+}

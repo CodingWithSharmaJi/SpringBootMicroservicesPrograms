@@ -1,0 +1,81 @@
+package in.ashokittech.request;
+
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class PassengerRequest {
+	
+	
+	private String name;
+	private String email;
+	private Long phnNo;
+	private String from;
+	private String to;
+	private String jdate;
+	private String trainnum;
+	public PassengerRequest(String name, String email, Long phnNo, String from, String to, String jdate,
+			String trainnum) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.phnNo = phnNo;
+		this.from = from;
+		this.to = to;
+		this.jdate = jdate;
+		this.trainnum = trainnum;
+	}
+	@XmlElement
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public Long getPhnNo() {
+		return phnNo;
+	}
+	public void setPhnNo(Long phnNo) {
+		this.phnNo = phnNo;
+	}
+	public String getFrom() {
+		return from;
+	}
+	public void setFrom(String from) {
+		this.from = from;
+	}
+	public String getTo() {
+		return to;
+	}
+	public void setTo(String to) {
+		this.to = to;
+	}
+	public String getJdate() {
+		return jdate;
+	}
+	public void setJdate(String jdate) {
+		this.jdate = jdate;
+	}
+	public String getTrainnum() {
+		return trainnum;
+	}
+	public void setTrainnum(String trainnum) {
+		this.trainnum = trainnum;
+	}
+	@Override
+	public String toString() {
+		return "PassengerRequest [name=" + name + ", email=" + email + ", phnNo=" + phnNo + ", from=" + from + ", to="
+				+ to + ", jdate=" + jdate + ", trainnum=" + trainnum + "]";
+	}
+	public PassengerRequest() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+}

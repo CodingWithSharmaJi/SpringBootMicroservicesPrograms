@@ -1,0 +1,54 @@
+package in.ashokittech.bind;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.xml.bind.annotation.XmlRootElement;
+
+
+@XmlRootElement
+@Entity
+public class Book {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "ticket_seq")
+    @SequenceGenerator(name = "ticket_seq", sequenceName = "TICKET_SEQ", allocationSize = 1)
+	public Integer bookid;
+	public String bookname;
+	public Double price;
+	public Book(int bookid, String bookname, double price) {
+		super();
+		this.bookid = bookid;
+		this.bookname = bookname;
+		this.price = price;
+	}
+	public Book() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Book [bookid=" + bookid + ", bookname=" + bookname + ", price=" + price + "]";
+	}
+	public int getBookid() {
+		return bookid;
+	}
+	public void setBookid(int bookid) {
+		this.bookid = bookid;
+	}
+	public String getBookname() {
+		return bookname;
+	}
+	public void setBookname(String bookname) {
+		this.bookname = bookname;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+
+}

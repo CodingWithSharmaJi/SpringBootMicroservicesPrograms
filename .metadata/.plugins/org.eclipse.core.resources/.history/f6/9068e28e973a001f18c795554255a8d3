@@ -1,0 +1,15 @@
+package in.ashokittech.bookticketrest;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookTicketRestController {
+
+	@GetMapping("/book")
+	public ResponseEntity<String>getbook(){
+		Book book=new Book(101,"SBMS",2900);
+		
+	}
+}

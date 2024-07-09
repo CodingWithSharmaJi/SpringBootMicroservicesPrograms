@@ -1,0 +1,16 @@
+package in.ashokittech.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokittech.dao.Passenger;
+
+@Service
+public class PassengerService {
+	
+	@Autowired
+	Passenger Passenger;
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package com.brillio.Passenger;
+
+public class Passenger {
+	private String fname;
+	private String lname;
+	private Long phnno;
+}

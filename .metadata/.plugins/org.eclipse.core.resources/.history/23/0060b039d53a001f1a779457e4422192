@@ -1,0 +1,15 @@
+package in.ashokittech.request;
+
+import jakarta.persistence.Entity;
+
+@Entity
+public class Ticket {
+
+	private String passengername;
+	private Integer ID;
+	private String passengeremail;
+	private Long passengermobno;
+	private String source;
+	private String destination;
+	private String journeydate;
+}

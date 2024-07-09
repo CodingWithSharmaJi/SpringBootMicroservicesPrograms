@@ -1,0 +1,5 @@
+package in.ashokittech.greet;
+
+public class GreetRestController {
+
+}

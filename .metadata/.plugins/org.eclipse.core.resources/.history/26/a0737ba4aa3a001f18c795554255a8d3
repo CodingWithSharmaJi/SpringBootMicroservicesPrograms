@@ -1,0 +1,16 @@
+package in.ashokittech.request;
+
+import jakarta.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class PassengerRequest {
+	
+	private String name;
+	private String email;
+	private Long phnNo;
+	private String from;
+	private String to;
+	private String jdate;
+	private String trainnum;
+
+}

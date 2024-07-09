@@ -1,0 +1,31 @@
+package in.ashokittech.bookTicket;
+
+public class BookTicket {
+	
+	private Integer bookId;
+	private String bookname;
+	private Double bookprice;
+	public Integer getBookId() {
+		return bookId;
+	}
+	public void setBookId(Integer bookId) {
+		this.bookId = bookId;
+	}
+	public String getBookname() {
+		return bookname;
+	}
+	public void setBookname(String bookname) {
+		this.bookname = bookname;
+	}
+	public Double getBookprice() {
+		return bookprice;
+	}
+	@Override
+	public String toString() {
+		return "BookTicket [bookId=" + bookId + ", bookname=" + bookname + ", bookprice=" + bookprice + "]";
+	}
+	public void setBookprice(Double bookprice) {
+		this.bookprice = bookprice;
+	}
+
+}
